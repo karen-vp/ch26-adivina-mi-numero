@@ -26,9 +26,9 @@ const doSearch = (targetValue) => {
         intentos++;
         guess = Math.floor((max + min) / 2);
 
-        if (confirm(`¿Tu numero es el: ${array[guess]}?`) && array[guess] === inputNumber) {
-            numberGuess.innerText = `Tu numero es el: ${array[guess]}, excelente decision`;
-            numberOfAttemps.innerText = `Numero de intentos: ${intentos}`
+        if (confirm(`¿Tu numero es el ${array[guess]}?`) && array[guess] === inputNumber) {
+            numberGuess.innerText = `Tu número es el ${array[guess]}, excelente decisión`;
+            numberOfAttemps.innerText = `Número de intentos: ${intentos}`
             // console.log("Encontraste el numero: " + array[guess]);
             // console.log("Numero de intentos: " + intentos);
             return guess;
